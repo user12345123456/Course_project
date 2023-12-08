@@ -8,7 +8,7 @@ using ZakzObedov1.ZakazDto;
 namespace ZakazObedov1.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("User")]
     public class UserController : ControllerBase
     {
         //public readonly ZakazObedov1DBContext _zakazobedov1Context;
@@ -40,20 +40,6 @@ namespace ZakazObedov1.Controllers
         {
             return await _userService.Update(user);
         }
-
-       /* [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteUserById(int id)
-        {
-            var user = await _zakazobedov1Context.Users.FindAsync(id);
-
-            if (user == null)
-                return NotFound();
-
-            _zakazobedov1Context.Users.Remove(user);
-            await _zakazobedov1Context.SaveChangesAsync();
-            return Ok();
-        }
-       */
 
     }
 }

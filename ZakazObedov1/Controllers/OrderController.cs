@@ -9,7 +9,7 @@ using ZakzObedov1.ZakazDto;
 namespace ZakazObedov1.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("Order")]
     public class OrderController: ControllerBase
     {
         public readonly IOrderService _orderService;

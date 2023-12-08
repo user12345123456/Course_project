@@ -25,10 +25,16 @@ builder.Services.AddDbContext<ZakazObedov1DBContext>(options => options.UseSqlSe
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddAutoMapper(typeof(UserProfile));
+
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddAutoMapper(typeof(OrderProfile));
+
+builder.Services.AddScoped<IMealRepository, MealRepository>();
 builder.Services.AddScoped<IMealService, MealService>();
 builder.Services.AddAutoMapper(typeof(MealProfile));
+
+builder.Services.AddScoped<IRestaurantRepository, RestaurantRepository>();
 builder.Services.AddScoped<IRestaurantService, RestaurantService>();
 builder.Services.AddAutoMapper(typeof(RestaurantProfile));
 var app = builder.Build();

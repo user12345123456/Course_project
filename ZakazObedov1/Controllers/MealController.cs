@@ -9,7 +9,7 @@ using ZakzObedov1.ZakazDto;
 namespace ZakazObedov1.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("Meal")]
     public class MealController : ControllerBase
     {
         public readonly IMealService _mealService;
