@@ -15,7 +15,7 @@ namespace ZakazObedov1.Entities
         public double Price { get; set; }
         public string Description { get; set; }
         //public List<Order> Orders { get; set; }
-        public int RestaurantID { get; set; }
-        public Restaurant Restaurant { get; set; }
+        public int? RestaurantID { get; set; }
+        public Restaurant? Restaurant { get; set; }
     }
 }

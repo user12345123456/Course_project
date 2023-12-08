@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZakazObedov1.Entities", "Za
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZakazObedov1.DataAccess", "ZakazObedov1.DataAccess\ZakazObedov1.DataAccess.csproj", "{62F47C6E-9E3C-4E25-8D4B-D08CDE90A95F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZakazObedov1.Services", "ZakazObedov1.Services\ZakazObedov1.Services.csproj", "{F3377D81-50CD-4CA2-9F15-A5E4690040D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZakazObedov1.Services", "ZakazObedov1.Services\ZakazObedov1.Services.csproj", "{F3377D81-50CD-4CA2-9F15-A5E4690040D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZakazObedov1.Services.Contract", "ZakazObedov1.Services.Contract\ZakazObedov1.Services.Contract.csproj", "{1D71D0E0-742B-4264-97C2-BD7D4C8E839E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZakazObedov1.Services.Contract", "ZakazObedov1.Services.Contract\ZakazObedov1.Services.Contract.csproj", "{1D71D0E0-742B-4264-97C2-BD7D4C8E839E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZakzObedov1.ZakazDto", "ZakzObedov1.ZakazDto\ZakzObedov1.ZakazDto.csproj", "{EF1F096C-514C-4088-9CDE-F118F00FC742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZakzObedov1.ZakazDto", "ZakzObedov1.ZakazDto\ZakzObedov1.ZakazDto.csproj", "{EF1F096C-514C-4088-9CDE-F118F00FC742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -43,5 +43,12 @@ namespace ZakazObedov1.DataAccess.Repository
             await _zakazobedov1Context.SaveChangesAsync();
             return user.Id;
         }
+        public async Task<int> Delete(int id)
+        {
+            var user = await _zakazobedov1Context.Users.FirstOrDefaultAsync(x => x.Id == id);
+            _zakazobedov1Context.Users.Remove(user);
+            await _zakazobedov1Context.SaveChangesAsync();
+            return id;
+        }
     }
 }

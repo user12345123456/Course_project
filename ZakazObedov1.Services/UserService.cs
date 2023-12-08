@@ -6,7 +6,7 @@ using ZakzObedov1.ZakazDto;
 
 namespace ZakazObedov1.Services
 {
-    public class UserService : IUserService
+    public class  UserService : IUserService
     {
         public readonly IUserRepository _userRepository;
         public readonly IMapper _mapper;

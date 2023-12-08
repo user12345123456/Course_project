@@ -30,7 +30,7 @@ namespace ZakazObedov1.Controllers
             return await _userService.Create(user);
         }
 
-        [HttpGet("GetById")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<UserDto>> GetById(int id)
         {
             return await _userService.GetById(id);

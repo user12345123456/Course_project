@@ -12,6 +12,6 @@
         public string DeliveryAddress { get; set; }
         public string PhoneNumber { get; set; }
 
-        public List<Order> Orders { get; set; }
+        public List<Order>? Orders { get; set; }
     }
 }

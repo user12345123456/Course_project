@@ -14,5 +14,6 @@ namespace ZakazObedov1.DataAccess.Repository.Contracts
         Task<List<User>> GetAll();
         Task<int> Create(User user);
         Task<int> Update(User user);
+        Task<int> Delete(int id);
     }
 }

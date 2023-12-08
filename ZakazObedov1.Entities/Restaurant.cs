@@ -14,8 +14,8 @@ namespace ZakazObedov1.Entities
 
         public string Address { get; set; }
 
-        public int MenuID { get; set; }
-        public List<Order> Orders { get; set; }
-        public List<Meal> Meals { get; set; }
+        public int? MenuID { get; set; }
+        public List<Order>? Orders { get; set; }
+        public List<Meal>? Meals { get; set; }
     }
 }
