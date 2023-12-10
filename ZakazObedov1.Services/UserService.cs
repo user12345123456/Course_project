@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ZakazObedov1.DataAccess.Repository;
 using ZakazObedov1.DataAccess.Repository.Contracts;
 using ZakazObedov1.Entities;
 using ZakazObedov1.Services.Contract;
@@ -50,6 +51,13 @@ namespace ZakazObedov1.Services
 
             userToUpdate = _mapper.Map(user, userToUpdate);
             return await _userRepository.Update(userToUpdate);
+        }
+
+        public async Task<int> Delete(int id)
+        {
+            var ToDelete = await _userRepository.GetById(id)
+            ?? throw new Exception("User not exist");
+            return await _userRepository.Delete(id);
         }
     }
 }

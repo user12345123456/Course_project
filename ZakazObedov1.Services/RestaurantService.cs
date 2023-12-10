@@ -56,5 +56,12 @@ namespace ZakazObedov1.Services
             restaurantToUpdate = _mapper.Map(restaurant, restaurantToUpdate);
             return await _restaurantRepository.Update(restaurantToUpdate);
         }
+
+        public async Task<int> Delete(int id)
+        {
+            var ToDelete = await _restaurantRepository.GetById(id)
+            ?? throw new Exception("Restaurant not exist");
+            return await _restaurantRepository.Delete(id);
+        }
     }
 }

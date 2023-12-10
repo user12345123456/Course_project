@@ -56,5 +56,11 @@ namespace ZakazObedov1.Services
             mealToUpdate = _mapper.Map(meal, mealToUpdate);
             return await _mealRepository.Update(mealToUpdate);
         }
+        public async Task<int> Delete(int id)
+        {
+            var ToDelete = await _mealRepository.GetById(id)
+            ?? throw new Exception("Meal not exist");
+            return await _mealRepository.Delete(id);
+        }
     }
 }

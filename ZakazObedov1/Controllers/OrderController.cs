@@ -40,5 +40,10 @@ namespace ZakazObedov1.Controllers
         {
             return await _orderService.Update(order);
         }
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<int>> DeleteProductById(int id)
+        {
+            return await _orderService.Delete(id);
+        }
     }
 }

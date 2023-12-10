@@ -57,6 +57,11 @@ namespace ZakazObedov1.Services
             orderToUpdate = _mapper.Map(order, orderToUpdate);
             return await _orderRepository.Update(orderToUpdate);
         }
-
+        public async Task<int> Delete(int id)
+        {
+            var ToDelete = await _orderRepository.GetById(id)
+            ?? throw new Exception("Order not exist");
+            return await _orderRepository.Delete(id);
+        }
     }
 }

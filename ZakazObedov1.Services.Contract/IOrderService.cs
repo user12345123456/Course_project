@@ -15,5 +15,6 @@ namespace ZakazObedov1.Services.Contract
         Task<int> Create(OrderDto order);
 
         Task<int> Update(OrderDto order);
+        Task<int> Delete(int id);
     }
 }

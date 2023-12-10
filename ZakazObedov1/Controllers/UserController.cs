@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ZakazObedov1.DataAccess;
 using ZakazObedov1.Entities;
+using ZakazObedov1.Services;
 using ZakazObedov1.Services.Contract;
 using ZakzObedov1.ZakazDto;
 
@@ -41,5 +42,10 @@ namespace ZakazObedov1.Controllers
             return await _userService.Update(user);
         }
 
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<int>> DeleteProductById(int id)
+        {
+            return await _userService.Delete(id);
+        }
     }
 }

@@ -15,5 +15,6 @@ namespace ZakazObedov1.Services.Contract
         Task<int> Create(RestaurantDto restaurant);
 
         Task<int> Update(RestaurantDto restaurant);
+        Task<int> Delete(int id);
     }
 }

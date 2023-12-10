@@ -10,5 +10,6 @@ namespace ZakazObedov1.Services.Contract
         Task<int> Create(UserDto user);
 
         Task<int> Update(UserDto user);
+        Task<int> Delete(int id);
     }
 }
