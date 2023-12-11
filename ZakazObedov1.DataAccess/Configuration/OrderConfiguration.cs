@@ -13,7 +13,6 @@ namespace ZakazObedov1.DataAccess.Configuration
             builder.ToTable("Orders", "dbo").HasKey(x => x.ID);
             builder.HasOne(_ => _.User).WithMany(_ => _.Orders).HasForeignKey(_ => _.UserID);
             builder.HasOne(_ => _.Restaurant).WithMany(_ => _.Orders).HasForeignKey(_ => _.RestaurantID);
-            // builder.HasOne(_ => _.Meal).WithMany(_ => _.Orders).HasForeignKey(_ => _.MealID);
         }
     }
 }

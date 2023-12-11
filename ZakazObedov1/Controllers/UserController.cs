@@ -12,7 +12,6 @@ namespace ZakazObedov1.Controllers
     [Route("User")]
     public class UserController : ControllerBase
     {
-        //public readonly ZakazObedov1DBContext _zakazobedov1Context;
         public readonly IUserService _userService;
         public UserController(IUserService userService)
         {
